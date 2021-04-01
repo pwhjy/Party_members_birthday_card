@@ -1,0 +1,16 @@
+<!--pages/time/time.wxml-->
+<view>
+<scroll-view style="position:relative">
+  <image class="background" src="{{imgURL}}" mode="widthFix">
+    <view class="btn_box">
+      <!-- <text class="time">_ _ _ _ 年 _ _ 月 _ _ 日</text> -->
+      <!-- <text class="text">我光荣加入中国共产党</text> -->
+      <picker class="time" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <!-- <input value='{{time}}' placeholder='_ _ _ _ 年 _ _ 月 _ _ 日'/> -->
+        <view class="text_1" style="font-size:{{fontsize}}">{{time}}</view>
+      </picker>
+      <button class="primary" id="btn" bindtap="bindToPledge" style="background:{{background_color}};color:{{color}};">下一步</button>
+    </view>
+  </image>
+</scroll-view>
+</view>

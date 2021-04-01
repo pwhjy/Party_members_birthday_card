@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<!--index.wxml-->
+<view>
+<scroll-view style="position:relative">
+  <image class="background" src="{{imgURL}}" mode="widthFix">
+    <view class="btn_box">
+      <button class="primary" bindtap="bindToTime">点击进入</button>
+    </view>
+  </image>
+</scroll-view>
+</view>

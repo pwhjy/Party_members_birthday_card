@@ -1,0 +1,24 @@
+<!--pages/card/card.wxml-->
+<!--pages/time/time.wxml-->
+
+<view style='width:0px;height:0px;overflow:hidden;'>
+<canvas canvas-id='share'  id="share" style='width:{{windowW}}px;height:{{windowH}}px' hidden='{{canvasHidden}}'></canvas> 
+</view>
+<view>
+<scroll-view style="position:relative">
+  <image class="background" src="{{imgURL}}" mode="widthFix" bindlongpress="canvasdraw" bindload="imgLoadFunc">
+    <view class="btn_box">
+      <!-- <text class="time">_ _ _ _ 年 _ _ 月 _ _ 日</text> -->
+
+      <text class="text text1">{{time}}</text>
+      <text class="text text2">{{text2}}</text>
+      <text class="text text3">{{days}}</text>
+      <text class="text text4">{{text4}}</text>
+      <text class="text text5">{{text5}}</text>
+      <text class="text text6">{{text6}}</text>
+      <text class="text text7">{{text7}}</text>
+    </view>
+  </image>
+  <text class="primary" id="btn" bindtap="bindToPledge" style="background:{{background_color}};">长按保存图片</text>
+</scroll-view>
+</view>

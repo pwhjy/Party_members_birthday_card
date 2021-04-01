@@ -1,0 +1,10 @@
+<!--pages/pledge/pledge.wxml-->
+<view>
+<scroll-view style="position:relative">
+  <image class="background" src="{{imgURL}}" mode="widthFix">
+    <view class="btn_box">
+      <button class="primary" bindtap="bindToCard">生成纪念卡</button>
+    </view>
+  </image>
+</scroll-view>
+</view>
